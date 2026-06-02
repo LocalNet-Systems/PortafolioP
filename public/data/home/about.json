@@ -1,0 +1,23 @@
+{
+    "title": "Sobre mí",
+    "paragraphs": [
+        "Abogado y notario con experiencia en derecho civil, contractual, registral e inmobiliario, enfocado en la formalización de actos jurídicos y la seguridad jurídica en operaciones patrimoniales.",
+        "Brindo acompañamiento legal en la elaboración y formalización de contratos, compraventas, arrendamientos, trámites de inscripción de propiedades y gestión de obligaciones, asegurando claridad, validez y respaldo legal en cada proceso."
+    ],
+    "stats": [
+        { "value": "30+", "label": "Años de experiencia" },
+        { "value": "500+", "label": "Procesos gestionados" }
+    ],
+    "areasTitle": "Servicios legales",
+    "areas": [
+        "Sector financiero y obligaciones",
+        "Formalización de contratos",
+        "Cobros de obligaciones",
+        "Inscripción de propiedades",
+        "Garantía mobiliaria",
+        "Contratos de arrendamiento",
+        "Casamientos y uniones legales",
+        "Compraventa de propiedades y vehículos",
+        "Constitución de créditos"
+    ]
+}

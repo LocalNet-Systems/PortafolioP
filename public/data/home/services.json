@@ -1,0 +1,25 @@
+{
+    "title": "Servicios",
+    "items": [
+        {
+        "title": "Derecho civil y contractual",
+        "desc": "Elaboración, revisión y formalización de contratos, compraventas, arrendamientos y obligaciones."
+        },
+        {
+        "title": "Derecho inmobiliario y registral",
+        "desc": "Inscripción de propiedades, traspasos y gestión de bienes inmuebles."
+        },
+        {
+        "title": "Cobro de obligaciones",
+        "desc": "Gestión y recuperación de deudas de forma legal y extrajudicial."
+        },
+        {
+        "title": "Derecho notarial",
+        "desc": "Autenticación y formalización de actos jurídicos como escrituras y matrimonios."
+        },
+        {
+        "title": "Asesoría legal preventiva",
+        "desc": "Prevención de riesgos legales para personas y empresas."
+        }
+    ]
+}

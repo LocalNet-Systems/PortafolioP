@@ -1,0 +1,43 @@
+{
+    "badge": "Contratos • Bienes • Operaciones Financieras",
+    "title": "Formalizamos contratos, bienes y operaciones financieras con seguridad jurídica.",
+    "description": "Más de 30 años brindando seguridad jurídica en la formalización de contratos, bienes y operaciones financieras para clientes individuales y empresariales.",
+    "buttons": [
+        {
+        "label": "Solicitar consulta",
+        "href": "#contacto",
+        "variant": "primary"
+        },
+        {
+        "label": "Ver servicios",
+        "href": "/servicios",
+        "variant": "secondary"
+        }
+    ],
+    "image": {
+        "src": "https://media.istockphoto.com/id/1449334081/es/foto/estatua-de-la-dama-de-la-justicia-en-el-escritorio-de-un-juez-o-abogado.jpg?s=612x612&w=0&k=20&c=beUXRp72ZLvXGFwfxtWum62stKqdnxnvOq1CB1r2Jo0=",
+        "alt": "Abogado",
+        "width": 700,
+        "height": 800
+    },
+    "floatingCards": [
+        {
+        "title": "Disponibilidad",
+        "text": "Atención 24/7",
+        "position": "bottom-left"
+        },
+        {
+        "title": "Consultas",
+        "text": "Primera evaluación gratuita",
+        "position": "top-right"
+        }
+    ],
+    "decorations": {
+        "blurCircle": {
+        "color": "amber",
+        "position": "top-left",
+        "size": "h-40 w-40",
+        "opacity": 0.6
+        }
+    }
+}
