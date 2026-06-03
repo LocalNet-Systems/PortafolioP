@@ -63,13 +63,17 @@ export default async function Hero() {
         </div>
 
         <div className="absolute -bottom-4 left-2 sm:left-6 bg-black/75 backdrop-blur-xl border border-white/10 rounded-2xl p-3 sm:p-4 shadow-2xl transition-transform duration-300 hover:-translate-y-1 max-w-[180px] sm:max-w-none">
-          <p className="text-[10px] sm:text-xs uppercase tracking-wider text-zinc-400 font-medium">Disponibilidad</p>
-          <p className="font-semibold text-white text-sm sm:text-base mt-0.5">Atención 24/7</p>
+          <p className="text-[10px] sm:text-xs uppercase tracking-wider text-zinc-400 font-medium">
+            Horarios
+          </p>
+          <p className="font-semibold text-white text-sm sm:text-base mt-0.5">
+            9:00 AM - 6:00 PM
+          </p>
         </div>
 
         <div className="absolute top-6 right-2 sm:right-6 bg-black/75 backdrop-blur-xl border border-white/10 rounded-2xl p-3 sm:p-4 shadow-2xl transition-transform duration-300 hover:-translate-y-1 max-w-[180px] sm:max-w-none">
           <p className="text-[10px] sm:text-xs uppercase tracking-wider text-zinc-400 font-medium">Consultas</p>
-          <p className="font-semibold text-white text-sm sm:text-base mt-0.5">Evaluación gratuita</p>
+          <p className="font-semibold text-white text-sm sm:text-base mt-0.5">Primera evaluación gratuita</p>
         </div>
       </div>
     </section>

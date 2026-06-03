@@ -5,8 +5,7 @@
         "Brindo acompañamiento legal en la elaboración y formalización de contratos, compraventas, arrendamientos, trámites de inscripción de propiedades y gestión de obligaciones, asegurando claridad, validez y respaldo legal en cada proceso."
     ],
     "stats": [
-        { "value": "30+", "label": "Años de experiencia" },
-        { "value": "500+", "label": "Procesos gestionados" }
+        { "value": "25+", "label": "Años de experiencia" }
     ],
     "areasTitle": "Servicios legales",
     "areas": [
@@ -16,8 +15,8 @@
         "Inscripción de propiedades",
         "Garantía mobiliaria",
         "Contratos de arrendamiento",
-        "Casamientos y uniones legales",
-        "Compraventa de propiedades y vehículos",
+        "Casamientos",
+        "Compraventa de bienes muebles e inmuebles",
         "Constitución de créditos"
     ]
 }

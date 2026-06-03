@@ -5,6 +5,8 @@ import type { ContactData } from "./types/home/contact";
 import Footer from "./components/layout/Footer";
 import { getData } from "./lib/getData";
 import Header from "./components/layout/Header";
+import ScrollToTopButton from "./components/layout/ScrollToTopButton"; // Importamos el nuevo botón
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -30,7 +32,8 @@ export default async function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased scroll-smooth`}
+      data-scroll-behavior="smooth"
     >
       <body className="min-h-full flex flex-col bg-zinc-50 text-zinc-900 dark:bg-black dark:text-zinc-100 font-sans">
         <Header brandName={contact.name} />
@@ -40,6 +43,7 @@ export default async function RootLayout({
         </main>
 
         <Footer name={contact.name} />
+        <ScrollToTopButton />
       </body>
     </html>
   );
