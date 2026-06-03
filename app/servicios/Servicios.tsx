@@ -28,13 +28,7 @@ export default function Servicios({ services }: Props) {
         if (!selectedService) return;
 
         const message = `
-            Hola, estoy interesado en el siguiente servicio:
-
-            Servicio:
-            ${selectedService}
-
-            Mi caso es el siguiente:
-            ${caseDetail}
+            Hola, estoy interesado en el siguiente servicio: ${selectedService}. Mi caso es el siguiente: ${caseDetail}
         `.trim();
 
         const phone = "50584149853";
