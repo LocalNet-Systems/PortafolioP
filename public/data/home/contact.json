@@ -5,7 +5,7 @@
     "actions": [
         {
         "label": "Enviar correo",
-        "href": "mailto:contacto@guerreroloren1974@gmail.com",
+        "href": "mailto:guerreroloren1974@gmail.com",
         "variant": "primary"
         },
         {

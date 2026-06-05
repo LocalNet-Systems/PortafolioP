@@ -19,7 +19,8 @@ export default function Header({
     brandName = "Lorenzo Guerrero",
     navItems = [
         { label: "Inicio", href: "/" },
-        { label: "Servicios", href: "/servicios" }
+        { label: "Servicios", href: "/servicios" },
+        { label: "Trayectoria", href: "/trayectoria" }
     ],
 }: HeaderProps) {
     const [isOpen, setIsOpen] = useState(false);
@@ -38,8 +39,8 @@ export default function Header({
             hoverBg: "hover:bg-blue-500/10"
         },
         { 
-            label: "Gmail", 
-            "href": "mailto:contacto@guerreroloren1974@gmail.com",
+            label: "Correo", 
+            "href": "mailto:guerreroloren1974@gmail.com",
             icon: <Mail className="w-4 h-4 text-red-400" />,
             hoverBg: "hover:bg-red-500/10"
         },

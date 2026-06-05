@@ -1,0 +1,59 @@
+{
+    "title": "Perfil Profesional",
+    "intro": "Con una trayectoria construida a través de años de experiencia en el ámbito jurídico, he desarrollado mi práctica profesional brindando asesoría, representación legal y servicios notariales a personas y organizaciones en diversos sectores. Mi experiencia abarca tanto el trabajo institucional como el ejercicio independiente, lo que me permite ofrecer una perspectiva integral y estratégica en la atención de cada asunto legal.\n\nMi compromiso es proporcionar soluciones jurídicas sólidas, fundamentadas en la ética profesional, la transparencia y el respeto por el marco legal, acompañando a cada cliente con responsabilidad y dedicación desde la consulta inicial hasta la conclusión de su caso.",
+    "eslogan": "Sic Itur Ad Astra",
+    "highlights": [
+        {
+            "year": "1996",
+            "text": "Consejo Supremo Electoral - Cotejado de Certificados de Nacimiento y Elaboración de Expendientes de cedulación."
+        },
+        {
+            "year": "1997",
+            "text": "Bufete Jurídico - Asistente Legal de Despacho."
+        },
+        {
+            "year": "1998",
+            "text": "Comisiones de Justicia y Paz - Asistente Jurídico de Oficina Central."
+        },
+        {
+            "year": "2000",
+            "text": "Comisiones de Justicia y Paz - Asistente Jurídico / Asesor de Observación Electoral."
+        },
+        {
+            "year": "2001",
+            "text": "Asesor Legal."
+        },
+        {
+            "year": "2004",
+            "text": "ACODEP, Sucursal León - Servicios Notariales, Inscripción, Recuperación Judicial y Extrajudicial de Cartera."
+        },
+        {
+            "year": "2007",
+            "text": "IAGUEI R.L - Asesoria Legal en Derecho Corporativo, recuperación extrajudicial y judicial de cartera, servicios notariales y inscripción de instrumentos públicos."
+        },
+        {
+            "year": "2015",
+            "text": "Servicios Independientes - Abogado Litigante en Derecho Civil, Familia y Laboral. "
+        }
+    ],
+
+    "approachTitle": "Enfoque profesional",
+    "approach": [
+        "Atención personalizada basada en el análisis particular de cada caso.",
+        "Prevención y gestión de riesgos legales para proteger los intereses del cliente.",
+        "Soluciones jurídicas prácticas orientadas a resultados concretos y sostenibles.",
+        "Acompañamiento transparente y comunicación constante durante cada etapa del proceso.",
+        "Experiencia en asesoría, negociación y litigio para abordar conflictos desde diferentes perspectivas.",
+        "Compromiso con la ética profesional, la confidencialidad y la defensa responsable de los derechos de cada cliente."
+    ],
+
+    "valuesTitle": "Principios de trabajo",
+    "values": [
+        "Prevención de riesgos legales mediante asesoría oportuna",
+        "Transparencia y comunicación clara en cada etapa del proceso",
+        "Defensa responsable de los derechos e intereses del cliente",
+        "Compromiso con soluciones jurídicas prácticas y sostenibles"
+    ],
+
+    "footer": "© {year} Lic. Alejandro Martínez, Abogado y Notario Público. Todos los derechos reservados."
+}
