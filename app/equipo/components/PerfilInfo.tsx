@@ -1,10 +1,10 @@
-import type { TrajectoryData } from "../types/home/trayectoria";
+import type { LawyerProfile } from "../../types/team/lawyer";
 
 interface Props {
-  trajectory: TrajectoryData;
+  profile: LawyerProfile;
 }
 
-export default function TrayectoriaInfo({ trajectory }: Props) {
+export default function PerfilInfo({ profile }: Props) {
   return (
     <div className="max-w-5xl mx-auto mt-10 mb-16 grid md:grid-cols-2 gap-6 px-4 md:px-0">
 
@@ -16,12 +16,12 @@ export default function TrayectoriaInfo({ trajectory }: Props) {
         <div className="flex items-center gap-3 mb-6 relative z-10">
           <span className="h-[1px] w-4 bg-gradient-to-r from-white/40 to-transparent" />
           <h3 className="text-xs font-mono font-semibold tracking-[0.2em] text-zinc-300 uppercase">
-            {trajectory.approachTitle}
+            {profile.approachTitle}
           </h3>
         </div>
 
         <ul className="space-y-4 text-sm text-zinc-400 relative z-10">
-          {trajectory.approach?.map((item, i) => (
+          {profile.approach?.map((item, i) => (
             <li key={i} className="flex items-start gap-3 group/item">
               <span className="flex h-1.5 w-1.5 shrink-0 rounded-full bg-zinc-600 mt-2 transition-all duration-300 group-hover/item:bg-white group-hover/item:scale-125" />
               <span className="leading-relaxed font-light tracking-wide group-hover/item:text-zinc-200 transition-colors duration-300">
@@ -40,12 +40,12 @@ export default function TrayectoriaInfo({ trajectory }: Props) {
         <div className="flex items-center gap-3 mb-6 relative z-10">
           <span className="h-[1px] w-4 bg-gradient-to-r from-white/40 to-transparent" />
           <h3 className="text-xs font-mono font-semibold tracking-[0.2em] text-zinc-300 uppercase">
-            {trajectory.valuesTitle}
+            {profile.valuesTitle}
           </h3>
         </div>
 
         <ul className="space-y-4 text-sm text-zinc-400 relative z-10">
-          {trajectory.values?.map((item, i) => (
+          {profile.values?.map((item, i) => (
             <li key={i} className="flex items-start gap-3 group/item">
               <span className="flex h-1.5 w-1.5 shrink-0 rounded-full bg-zinc-600 mt-2 transition-all duration-300 group-hover/item:bg-white group-hover/item:scale-125" />
               <span className="leading-relaxed font-light tracking-wide group-hover/item:text-zinc-200 transition-colors duration-300">

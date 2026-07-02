@@ -21,7 +21,7 @@ export default function ShareButton() {
         if (navigator.share) {
             await navigator.share({
             title,
-            text: "Lorenzo Guerrero | Abogado y Notario\nVisita el enlace para ver los servicios disponibles",
+            text: "Guerrero Legal | Abogados y Notarios\nVisita el enlace para ver los servicios legales disponibles",
             url,
             });
 

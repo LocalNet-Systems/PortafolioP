@@ -1,12 +1,12 @@
 "use client";
 
-import type { TrajectoryData } from "../types/home/trayectoria";
+import type { LawyerProfile } from "../../types/team/lawyer";
 
 interface Props {
-  trajectory: TrajectoryData;
+  profile: LawyerProfile;
 }
 
-export default function Trayectoria({ trajectory }: Props) {
+export default function Perfil({ profile }: Props) {
   return (
     <section className="relative pt-4 pb-10 px-4 md:px-0 text-white overflow-hidden">
 
@@ -17,7 +17,7 @@ export default function Trayectoria({ trajectory }: Props) {
       <div className="max-w-5xl mx-auto space-y-4 mb-12">
         <div className="space-y-4 max-w-2xl relative z-10">
           <h1 className="text-3xl sm:text-4xl font-bold tracking-tight text-white leading-tight">
-            {trajectory.title}
+            {profile.title}
           </h1>
           <div className="h-[2px] w-20 bg-gradient-to-r from-amber-400 via-indigo-500 to-transparent rounded-full" />
         </div>
@@ -26,12 +26,12 @@ export default function Trayectoria({ trajectory }: Props) {
           <div className="absolute left-0 top-2 bottom-2 w-[2px] bg-gradient-to-b from-amber-400/60 via-white/10 to-transparent rounded-full" />
 
           <p className="text-sm md:text-base text-zinc-300 leading-relaxed font-light pl-4 border-l border-white/5">
-            {trajectory.intro}
+            {profile.intro}
           </p>
         </div>
       </div>
 
-      {trajectory.video && (
+      {profile.video && (
         <div className="max-w-5xl mx-auto relative group">
           
           <div className="absolute inset-0 bg-white/[0.01] rounded-2xl blur-xl group-hover:bg-white/[0.03] transition-all duration-700 pointer-events-none" />
@@ -42,8 +42,8 @@ export default function Trayectoria({ trajectory }: Props) {
 
             <iframe
               className="w-full aspect-video scale-[1.005] group-hover:scale-100 transition-transform duration-750 ease-out"
-              src={`${trajectory.video.src.replace("watch?v=", "embed/")}?autoplay=1`}
-              title={trajectory.video.title}
+              src={`${profile.video.src.replace("watch?v=", "embed/")}?autoplay=1`}
+              title={profile.video.title}
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             />

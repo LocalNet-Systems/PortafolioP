@@ -25,15 +25,16 @@ interface HeaderProps {
 }
 
 export default function Header({
-    brandName = "Lorenzo Guerrero",
+    brandName = "Guerrero Legal",
     navItems = [
         { label: "Inicio", href: "/" },
         { label: "Servicios", href: "/servicios" },
-        { label: "Trayectoria", href: "/trayectoria" },
+        { label: "Equipo Legal", href: "/equipo" },
     ],
 }: HeaderProps) {
     const [isOpen, setIsOpen] = useState(false);
     const [mobileMenu, setMobileMenu] = useState(false);
+    const message = "Hola, visité su sitio web y me gustaría hacerle una consulta. ¿Tiene tiempo?";
 
     const contactOptions = [
         {
@@ -116,30 +117,39 @@ export default function Header({
                         <AnimatePresence>
                         {isOpen && (
                             <motion.div
-                            initial={{ opacity: 0, y: 10, scale: 0.95 }}
-                            animate={{ opacity: 1, y: 0, scale: 1 }}
-                            exit={{ opacity: 0, y: 10, scale: 0.95 }}
-                            transition={{ duration: 0.2, ease: "easeOut" }}
-                            className="absolute right-0 mt-2 w-44 rounded-2xl border border-white/10 bg-zinc-950/90 backdrop-blur-xl p-1.5 shadow-xl"
-                            >
-                            {contactOptions.map((option, index) => (
-                                <motion.div
-                                key={option.label}
-                                initial={{ opacity: 0, x: -5 }}
-                                animate={{ opacity: 1, x: 0 }}
-                                transition={{ delay: index * 0.05 }}
+                                initial={{ opacity: 0, y: 10, scale: 0.95 }}
+                                animate={{ opacity: 1, y: 0, scale: 1 }}
+                                exit={{ opacity: 0, y: 10, scale: 0.95 }}
+                                transition={{ duration: 0.2, ease: "easeOut" }}
+                                className="absolute right-0 mt-2 w-44 rounded-2xl border border-white/10 bg-zinc-950/90 backdrop-blur-xl p-1.5 shadow-xl"
                                 >
-                                <a
-                                    href={option.href}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className={`flex items-center gap-3 px-3 py-2.5 rounded-xl text-xs font-medium text-zinc-300 hover:text-white transition-colors ${option.hoverBg}`}
-                                >
-                                    {option.icon}
-                                    {option.label}
-                                </a>
-                                </motion.div>
-                            ))}
+                                {contactOptions.map((option, index) => {
+                                    let href = option.href;
+                                    if (href.startsWith("https://wa.me")) {
+                                        href += `?text=${encodeURIComponent(message)}`;
+                                    }
+                                    if (href.startsWith("mailto:")) {
+                                        href += `?subject=${encodeURIComponent("Consulta Legal")}&body=${encodeURIComponent(message)}`;
+                                    }
+                                    return (
+                                        <motion.div
+                                        key={option.label}
+                                        initial={{ opacity: 0, x: -5 }}
+                                        animate={{ opacity: 1, x: 0 }}
+                                        transition={{ delay: index * 0.05 }}
+                                        >
+                                        <a
+                                            href={href}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className={`flex items-center gap-3 px-3 py-2.5 rounded-xl text-xs font-medium text-zinc-300 hover:text-white transition-colors ${option.hoverBg}`}
+                                        >
+                                            {option.icon}
+                                            {option.label}
+                                        </a>
+                                        </motion.div>
+                                    );
+                                })}
                             </motion.div>
                         )}
                         </AnimatePresence>

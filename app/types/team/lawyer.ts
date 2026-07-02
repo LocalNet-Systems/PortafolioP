@@ -3,16 +3,16 @@ export interface Highlight {
     text: string;
 }
 
-export interface TrajectoryVideo {
+export interface LawyerVideo {
     src: string;
     title: string;
 }
 
-export interface TrajectoryData {
+export interface LawyerProfile {
     title: string;
     intro: string;
-    video?: TrajectoryVideo;
-    eslogon? : string;
+    video?: LawyerVideo;
+    eslogan?: string;
     highlights: Highlight[];
     approachTitle: string;
     approach: string[];
@@ -21,6 +21,6 @@ export interface TrajectoryData {
     footer: string;
 }
 
-export interface Props {
-    trajectory: TrajectoryData;
+export interface LawyerProfileProps {
+    profile: LawyerProfile;
 }

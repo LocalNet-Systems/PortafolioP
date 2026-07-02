@@ -1,0 +1,12 @@
+[
+    {
+        "id": "lorenzo-guerrero",
+        "name": "Lorenzo Guerrero",
+        "photo": "/assets/lorenzo.jpeg"
+    },
+    {
+        "id": "ignacio-guerrero",
+        "name": "Ignacio Guerrero",
+        "photo": "/assets/ignacio.jpeg"
+    }
+]

@@ -31,19 +31,31 @@ export default async function Contact() {
             </div>
 
             <div className="lg:col-span-2 w-full flex flex-col sm:flex-row lg:flex-col items-stretch justify-center gap-4">
-              {contact.actions.map((action, i) => (
-                <a
-                  key={i}
-                  href={action.href}
-                  className={
-                    action.variant === "primary"
-                      ? "w-full rounded-full bg-white text-black hover:bg-zinc-200 transition-all duration-300 px-8 py-4 font-semibold text-sm tracking-wide text-center shadow-lg shadow-white/5 hover:scale-[1.02] active:scale-[0.98]"
-                      : "w-full rounded-full border border-white/20 bg-white/5 text-white hover:bg-white/10 transition-all duration-300 px-8 py-4 font-medium text-sm tracking-wide text-center backdrop-blur-sm hover:scale-[1.02] active:scale-[0.98]"
-                  }
-                >
-                  {action.label}
-                </a>
-              ))}
+              {contact.actions.map((action, i) => {
+                let href = action.href;
+
+                if (href.startsWith("https://wa.me")) {
+                  href += `?text=${encodeURIComponent(contact.message)}`;
+                }
+
+                if (href.startsWith("mailto:")) {
+                  href += `?subject=${encodeURIComponent("Consulta Legal")}&body=${encodeURIComponent(contact.message)}`;
+                }
+
+                return (
+                  <a
+                    key={i}
+                    href={href}
+                    className={
+                      action.variant === "primary"
+                        ? "w-full rounded-full bg-white text-black hover:bg-zinc-200 transition-all duration-300 px-8 py-4 font-semibold text-sm tracking-wide text-center shadow-lg shadow-white/5 hover:scale-[1.02] active:scale-[0.98]"
+                        : "w-full rounded-full border border-white/20 bg-white/5 text-white hover:bg-white/10 transition-all duration-300 px-8 py-4 font-medium text-sm tracking-wide text-center backdrop-blur-sm hover:scale-[1.02] active:scale-[0.98]"
+                    }
+                  >
+                    {action.label}
+                  </a>
+                );
+              })}
             </div>
 
           </div>

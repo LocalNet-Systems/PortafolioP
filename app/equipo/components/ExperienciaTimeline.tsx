@@ -1,10 +1,10 @@
-import type { TrajectoryData } from "../types/home/trayectoria";
+import type { LawyerProfile } from "../../types/team/lawyer";
 
 interface Props {
-  trajectory: TrajectoryData;
+  profile: LawyerProfile;
 }
 
-export default function TrayectoriaTimeline({ trajectory }: Props) {
+export default function ExperienciaTimeline({ profile }: Props) {
     return (
         <div className="max-w-5xl mx-auto mb-16 px-4 md:px-0">
         
@@ -22,7 +22,7 @@ export default function TrayectoriaTimeline({ trajectory }: Props) {
 
                     <div className="relative border-l border-gradient-to-b from-white/10 via-white/10 to-transparent ml-4 md:ml-12 space-y-6">
                     
-                    {trajectory.highlights?.map((item, i) => (
+                    {profile.highlights?.map((item, i) => (
                         <div key={i} className="relative pl-8 md:pl-12 group">
                         
                         <div className="absolute -left-[17px] top-3 h-8 w-8 rounded-full border border-white/10 bg-zinc-950 flex items-center justify-center group-hover:border-white/40 group-hover:scale-110 transition-all duration-500 z-10 shadow-2xl">

@@ -1,7 +1,8 @@
 {
-    "name": "Lorenzo Guerrero",
+    "name": "Guerrero Legal",
     "title": "Contacto",
     "description": "Atención jurídica confidencial y personalizada. Proporciono respuesta oportuna sobre su consulta dentro de las primeras 24 horas para consultas legales y coordinación de citas.",
+    "message": "Hola, visité su sitio web y me gustaría hacer una consulta. ¿Tiene tiempo?",
     "actions": [
         {
         "label": "Enviar correo",
