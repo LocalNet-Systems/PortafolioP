@@ -2,11 +2,13 @@
     {
         "id": "lorenzo-guerrero",
         "name": "Lorenzo Guerrero",
-        "photo": "/assets/lorenzo.jpeg"
+        "photo": "/assets/lorenzo.jpeg",
+        "grade":"Abogado y Notario Público"
     },
     {
         "id": "ignacio-guerrero",
         "name": "Ignacio Guerrero",
-        "photo": "/assets/ignacio.jpeg"
+        "photo": "/assets/ignacio.jpeg",
+        "grade":"Asistente Legal"
     }
 ]

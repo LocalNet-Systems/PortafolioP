@@ -25,7 +25,7 @@ interface HeaderProps {
 }
 
 export default function Header({
-    brandName = "Guerrero Legal",
+    brandName = "Despacho Guerrero",
     navItems = [
         { label: "Inicio", href: "/" },
         { label: "Servicios", href: "/servicios" },
