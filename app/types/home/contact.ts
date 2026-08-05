@@ -1,12 +1,16 @@
 export type ContactData = {
-    name: string;
-    title: string;
-    description: string;
-    message: string;
-    actions: {
-        label: string;
-        href: string;
-        variant: "primary" | "secondary";
+  name: string;
+  title: string;
+  description: string;
+  message: string;
+  actions: {
+    label: string;
+    href?: string;
+    variant: "primary" | "secondary";
+    contacts?: {
+      label: string;
+      href: string;
     }[];
-    footer: string;
+  }[];
+  footer: string;
 };

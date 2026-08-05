@@ -11,14 +11,32 @@
         },
         {
         "label": "Llamar ahora",
-        "href": "tel:+50584149853",
-        "variant": "secondary"
+        "variant": "secondary",
+        "contacts": [
+            {
+            "label": "Lorenzo Guerrero",
+            "href": "tel:+50584149853"
+            },
+            {
+            "label": "Ignacio Guerrero",
+            "href": "tel:+50587904039"
+            }
+        ]
         },
         {
         "label": "WhatsApp",
-        "href": "https://wa.me/50584149853",
-        "variant": "secondary"
+        "variant": "secondary",
+        "contacts": [
+            {
+            "label": "Lorenzo Guerrero",
+            "href": "https://wa.me/50584149853"
+            },
+            {
+            "label": "Ignacio Guerrero",
+            "href": "https://wa.me/50587904039"
+            }
+        ]
         }
     ],
-    "footer": "© {year} Lorenzo Guerrero, Abogado y Notario. Todos los derechos reservados."
+    "footer": "© {year} Despacho Guerrero, Abogados y Notarios. Todos los derechos reservados."
 }
